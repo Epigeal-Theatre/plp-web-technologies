@@ -1,0 +1,24 @@
+/* style.css */
+.navbar {
+    overflow: hidden;
+    background-color: #555; /* Background color for the navigation bar */
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 18px; /* Adjusted padding */
+    text-decoration: none;
+    width: calc(100% / 7); /* Divide the available space equally among navigation items */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    font-weight: bold; /* Make the text bold */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Add a slight shadow effect */
+}
+
+/* Change color of links on hover */
+.navbar a:hover {
+    background-color: #888;
+    text-shadow: none; /* Remove shadow on hover */
+}
