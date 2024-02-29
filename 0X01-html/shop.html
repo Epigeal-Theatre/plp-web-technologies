@@ -11,7 +11,57 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        
+        <link rel="stylesheet" href="ShopButtonStyle.css">
+
+
+        
+
+    <style>
+        /* Add these styles to adjust the appearance of the rounded toggle buttons */
+            .rounded-toggle {
+                width: 80px;
+                height: 30px;
+                border-radius: 15px; /* Half of the height for rounded sides */
+                background-color: #9e9e9e; /* Grey color for off state */
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                position: relative;
+                border: none; /* Remove default button border */
+            }
+
+            /* Styles for the "on" state */
+            .rounded-toggle.on {
+                background-color: green; /* Change background color when on */
+            }
+
+            /* Styles for the "off" state */
+            .rounded-toggle.off:before {
+                content: 'Off'; /* Display "Off" text */
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white; /* Text color for off state */
+            }
+
+            /* Styles for the "on" state */
+            .rounded-toggle.on:before {
+                content: 'On'; /* Display "On" text */
+                position: absolute;
+                top: 50%;
+                left: 5px; /* Move the "On" text to the left */
+                transform: translateY(-50%);
+                color: white; /* Text color for on state */
+            }
+
+            /* Style labels for better alignment */
+            label {
+                margin-left: 10px;
+            }
+    </style>
+        
+
     </head>
     <body>
 
@@ -21,14 +71,28 @@
         <!-- End of navigation bar -->
         </header>
 
-
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <!--add button html code-->
+        <body>
+            
         
-
+            <div class="mdc-switch-container">
+                <button id="cheapSwitch" class="rounded-toggle" onclick="toggleSwitch('cheapSwitch')">Off</button>
+                <label for="cheapSwitch" id="cheapLabel"></label>
+            </div>
+        
+            <div class="mdc-switch-container">
+                <button id="fastSwitch" class="rounded-toggle" onclick="toggleSwitch('fastSwitch')">Off</button>
+                <label for="fastSwitch" id="fastLabel"></label>
+            </div>
+        
+            <div class="mdc-switch-container">
+                <button id="goodSwitch" class="rounded-toggle" onclick="toggleSwitch('goodSwitch')">Off</button>
+                <label for="goodSwitch" id="goodLabel"></label>
+            </div>
+            
+        <script src="shopButtons_script.js"></script>
         <script src="loadNavbar.js"></script>
 
-        <script src="" async defer></script>
+        
     </body>
 </html>
