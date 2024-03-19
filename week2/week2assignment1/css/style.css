@@ -1,0 +1,18 @@
+/*style.css document*/
+
+#my-header{
+    background-color: #4b5357;
+    font-size: 18px;
+}
+
+#my_nav_pages{
+    justify-content: space-between;
+    align-content: left;
+    padding: 10px;
+}
+
+#social_media_container{
+    justify-content: space-between;
+    align-content: right;
+    padding: 10px;
+}
