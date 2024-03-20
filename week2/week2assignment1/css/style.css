@@ -1,18 +1,113 @@
 /*style.css document*/
 
 #my-header{
-    background-color: #4b5357;
-    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    height: 20vh; /* Example height */
+    border: 1px solid black;
+    margin: 10px;
+
+}
+#my-upper_sectionOfHeaderWithLogoOnly{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding:10px;
+    max-height: 8vh;
+    /*justify-content: center;*/
+    align-content: baseline;
+    
+
+}
+#myLowerSectionOfHeaderWithNavBarAndSocialMedia{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    color: black;
+    font-weight: bold;
+    align-content: baseline;
+    padding: 10px;
+    
+    
+
+ 
+}
+#my_nav_pages{
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    justify-content: space-between;
+    align-content: left ;
+    align-content: center;
+    padding: 10px;
+    margin-left: 0;
 }
 
-#my_nav_pages{
-    justify-content: space-between;
-    align-content: left;
-    padding: 10px;
+.navButton{
+    background-color: white;
+    font-weight: bold;
+    padding: 10px 20px; /* Add padding to the buttons */
+    border: none;
+    border-left: 2px solid black; /* Add a 2px solid black border on the left side */
+    border-bottom: 2px solid black; /* Add a 2px solid black border on the right side */
 }
 
 #social_media_container{
+    margin-left:auto;
     justify-content: space-between;
     align-content: right;
-    padding: 10px;
+    align-content: center;
+    padding: 10px 10px; /* Add padding to the buttons */
+}
+
+#main-section{
+
+    #homeImageContainer{
+        width: 100%; /* Ensure the container spans the full width */
+            max-width: 100%;
+            max-height: 400px; /* Set a maximum width for the container */
+            margin: 0 auto; /* Center the container horizontally */
+            overflow: hidden; /* Hide overflow content */
+            position: relative;
+            /*height: 80vh; /* Positioning context for absolutely positioned elements */
+
+            #homeImageContainer img{
+                width: 100%; /* Make the image fill the container width */
+                height: auto;
+                display: block;
+            
+            }
+    }
+}
+
+#my_footer{
+    display: flex;
+    flex-direction: column;
+    background-color: slategray;
+    height: 16vh;
+
+    }
+
+#my-mailDiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        margin-top: auto; 
+}
+.mail-icon-container{
+
+    height: 30px;
+    width: 50px;
+}
+.image{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+#my-copyrightParagraph{
+    display: flex;
+    flex-direction: row;
+    align-items: bottom;
+    justify-content: center;
 }
