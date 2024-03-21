@@ -1,0 +1,111 @@
+/*style.css document*/
+
+#my-header{
+    display: flex;
+    flex-direction: column;
+    height: 20vh; /* Example height */
+    border: 1px solid black;
+    margin: 10px;
+
+}
+#my-upper_sectionOfHeaderWithLogoOnly{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding:10px;
+    max-height: 8vh;
+    /*justify-content: center;*/
+    align-content: baseline;
+    
+
+}
+#myLowerSectionOfHeaderWithNavBarAndSocialMedia{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    color: black;
+    font-weight: bold;
+    align-content: baseline;
+    padding: 10px;
+    
+    
+
+ 
+}
+#my_nav_pages{
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    justify-content: space-between;
+    align-content: left ;
+    align-content: center;
+    padding: 10px;
+    margin-left: 0;
+}
+
+.navButton{
+    background-color: white;
+    font-weight: bold;
+    padding: 10px 20px; /* Add padding to the buttons */
+    border: none;
+    border-left: 2px solid black; /* Add a 2px solid black border on the left side */
+    border-bottom: 2px solid black; /* Add a 2px solid black border on the right side */
+}
+
+#social_media_container{
+    margin-left:auto;
+    justify-content: space-between;
+    align-content: right;
+    align-content: center;
+    padding: 10px 10px; /* Add padding to the buttons */
+}
+/******/
+
+#drinksFoodsDesserts-container{
+    display: flex;
+    flex-direction: row;
+    border: solid black 2px;
+    height: 80vh;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#drinks-container{
+    border: solid gray 1px;
+    width: 30%;
+    position: relative;
+}
+
+#foods-container{
+    border: solid gray 1px;
+    width: 30%;
+    position:relative;
+    height: 100%;
+}
+
+
+#desserts-container{
+    border: solid gray 1px;
+    width: 30%;
+    position: relative;
+    
+}
+
+.text-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black; /* Set text color */
+    font-size: 24px; /* Set font size */
+    /* Additional styling for the text */
+}
+
+.homeDisplayimage{
+ 
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Maintain aspect ratio */
+    display: block; /* Ensures proper spacing around the image */
+
+
+    
+}
