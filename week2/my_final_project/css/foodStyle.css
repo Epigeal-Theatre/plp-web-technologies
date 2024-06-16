@@ -69,13 +69,13 @@
     justify-content: space-evenly;
     width: 100%;
 }
-#drinks-container{
+#project1-container{
     border: solid gray 1px;
     width: 30%;
     position: relative;
 }
 
-#foods-container{
+#project2-container{
     border: solid gray 1px;
     width: 30%;
     position:relative;
@@ -83,7 +83,7 @@
 }
 
 
-#desserts-container{
+#project3-container{
     border: solid gray 1px;
     width: 30%;
     position: relative;
